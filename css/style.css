@@ -1,0 +1,83 @@
+/* Colors 
+#141414 BLACK
+#00FFFF BLUE
+#FFC400 YELLOW
+#9A00FF PURPLE
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 500!important;
+}
+
+/* ========== Navbar ========== */
+
+nav {
+    background-color: black;
+}
+
+.navbar-brand, .navbar-link {
+    text-decoration: none;
+    font-size: 22px!important;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #00ffff;
+}
+
+nav .me-auto button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 10%;
+    background-color: #FFC400;
+}
+
+/* ========== Content ========== */
+
+.frontpage-image {
+    padding-top: 100px;
+    background-color: #141414;
+}
+
+.frontpage-arrowdown {
+    background-color: #141414;
+    font-size: 40px;
+}
+
+.frontpage-arrowdown a i {
+    margin-top: 160px;
+    color: white;
+    -webkit-animation: scroll 3s ease;
+    -moz-animation: scroll 3s ease;
+    -o-animation: scroll 3s ease infinite;
+    animation: scroll 3s ease infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(0,20px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+/* ========== Scrollbar ========== */
+
+::-webkit-scrollbar {
+    width: 0;
+}
