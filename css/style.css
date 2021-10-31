@@ -3,6 +3,7 @@
 #00FFFF BLUE
 #FFC400 YELLOW
 #9A00FF PURPLE
+#707070 GREY
 */
 
 html, body {
@@ -14,42 +15,63 @@ html, body {
     font-weight: 500!important;
 }
 
+main {
+    background-color: #141414;
+    color: white;
+}
+
 /* ========== Navbar ========== */
 
 nav {
-    background-color: black;
+    background-color: #141414;
 }
 
-.navbar-brand, .navbar-link {
+.navbar-brand, .nav-item {
     text-decoration: none;
     font-size: 22px!important;
 }
 
-nav a {
+nav .navbar-brand, nav .nav-link {
     color: white;
 }
 
-nav a:hover {
+nav .nav-link:hover, nav .navbar-brand:hover {
     color: #00ffff;
 }
 
-nav .me-auto button {
+nav .darkmode button {
     width: 30px;
     height: 30px;
     border: none;
     border-radius: 10%;
     background-color: #FFC400;
+    transform: translateY(8px);
 }
 
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.navbar-toggler span i {
+    transform: translateX(-3px);
+}
+
+.navbar-toggler span {
+    color: black;
+}
 /* ========== Content ========== */
 
 .frontpage-image {
     padding-top: 100px;
+    max-width: 1000px;
     background-color: #141414;
 }
 
+/* ========== Frontpage Arrow ========== */
+
 .frontpage-arrowdown {
-    background-color: #141414;
     font-size: 40px;
 }
 
@@ -74,8 +96,39 @@ nav .me-auto button {
     }
 }
 
+/* ========== Image Info ========== */
 
+.img-info {
+    padding-top: 100px;
+}
 
+.img-self img {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.img-name {
+    padding-top: 20px;
+}
+
+.img-name-description {
+    font-size: 12px;
+    color: #707070;
+    font-style: italic;
+}
+
+/* ========== About Me ========== */
+
+.about-me {
+    padding-top: 80px;
+}
+
+.about-me-text {
+    max-width: 521px;
+    min-width: auto;
+}
+
+.about-me-img
 /* ========== Scrollbar ========== */
 
 ::-webkit-scrollbar {

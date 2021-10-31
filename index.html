@@ -16,52 +16,101 @@
 </head>
 
 <body>
-  <main>
-    <nav class="navbar navbar-expand-md">
-      <div class="ms-auto">
-        <a class="navbar-brand" href="#">Yusuf Celik</a>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="nav navbar mx-auto text-center">
+      <div class="mx-auto">
+        <a class="navbar-brand me-3" href="#">Yusuf Celik</a>
+        <button class="navbar-toggler" style="background-color: white;" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span><i class='bx bx-menu'></i></span>
+        </button>
       </div>
-      <div>
-        <ul class="nav navbar-nav">
-          <li>
-            <a class="navbar-link px-2" href="#">About me</a>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
-          <li>
-            <a class="navbar-link px-2" href="#">Experience</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About me</a>
           </li>
-          <li>
-            <a class="navbar-link px-2" href="#">Projects</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Experience</a>
           </li>
-          <li>
-            <a class="navbar-link px-2" href="#">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <div class="darkmode">
+            <button>
+              <i class="bx bx-sun"></i>
+            </button>
+          </div>
         </ul>
       </div>
-      <div class="me-auto">
-        <button><i class="bx bx-sun"></i></button>
-      </div>
-    </nav>
-    <div class="frontpage-image text-center">
-      <div class="slideshow">
-      </div>
-      <img class="rounded d-inline-block" id="btn1" src="img/image1.jpg" alt="image replacer">
-      <img class="rounded d-none" id="btn2" src="img/image2.jpg" alt="image replacer">
+    </div>
+  </nav>
+  <main>
+    <!-- START NAVBAR -->
+    <!-- END NAVBAR -->
+    <!-- START FRONTPAGE -->
+    <div class="frontpage-image mx-auto px-3 text-center">
+      <img class="rounded img w-100 h-auto" id="btn1" src="img/image1.jpg" alt="image replacer">
     </div>
     <div class="frontpage-arrowdown text-center">
       <a href=""><i class="bx bxs-down-arrow"></i></a>
     </div>
+    <!-- END FRONTPAGE -->
+    <!-- START IMG INFO -->
+    <div class="img-info text-center">
+      <div class="img-self">
+        <img src="img/image3.png" alt="Yusuf Celik" title="Yusuf Celik">
+      </div>
+      <div class="img-name">
+        <h2>
+          Yusuf Celik
+        </h2>
+      </div>
+      <div class="img-name-description">
+        (Student / Programmer / Gamer)
+      </div>
+    </div>
+    <!-- END IMG INFO -->
+    <!-- START ABOUT ME -->
+    <div class="about-me">
+      <div class="about-me-title text-center">
+        <h2>
+          About Me
+        </h2>
+      </div>
+      <div class="about-me-text mx-auto">
+        Mijn naam is Yusuf, ik ben 17 jaar en zit op het ROC Mondriaan in Tinwerf.
+        Ik doe de opleiding Software Developer en zit nu in mijn eerste jaar. Mijn
+        hobby’s zijn gamen, sporten en programmeren. Ik game al sinds jongs af aan
+        op de computer en heb ook geprobeerd om mijn eigen game te maken dat niet
+        zo goed ging omdat ik niks wist van programmeertalen. Dus ik wou een
+        opleiding kiezen waarbij ik achter een computer werk en koos uiteindelijk
+        voor software development en niet voor ITSD (IT Systems and Devices), omdat
+        ik liever achter de computer werk dan met computers. Ik vind websites maken
+        best leuk en weet nog niet precies of ik games wil maken of websites. Voor
+        nu weet ik HTML/CSS en zal het komende jaar ook werken aan Javascript en C#.
+      </div>
+      <br clear="left">
+      <div class="about-me-img">
+        <img src="#" alt="About me img">
+      </div>
+    </div>
+    <!-- END ABOUT ME -->
   </main>
-  <script src="js/main.js">
-  </script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
