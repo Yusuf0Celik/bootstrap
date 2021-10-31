@@ -16,11 +16,12 @@
 </head>
 
 <body>
+  <!-- START NAVBAR -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="nav navbar mx-auto text-center">
       <div class="mx-auto">
         <a class="navbar-brand me-3" href="#">Yusuf Celik</a>
-        <button class="navbar-toggler" style="background-color: white;" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler" style="border: 1px solid #a0a0a0;" type=" button" data-bs-toggle="collapse"
           data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
           aria-label="Toggle navigation">
           <span><i class='bx bx-menu'></i></span>
@@ -32,7 +33,7 @@
             <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About me</a>
+            <a class="nav-link" href="#aboutme-title">About me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Experience</a>
@@ -45,28 +46,27 @@
           </li>
           <div class="darkmode">
             <button>
-              <i class="bx bx-sun"></i>
+              <i class="darkmode-icon bx bx-sun m-auto"></i>
             </button>
           </div>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- END NAVBAR -->
   <main>
-    <!-- START NAVBAR -->
-    <!-- END NAVBAR -->
     <!-- START FRONTPAGE -->
-    <div class="frontpage-image mx-auto px-3 text-center">
+    <div class="frontpage-image mx-auto px-1 text-center">
       <img class="rounded img w-100 h-auto" id="btn1" src="img/image1.jpg" alt="image replacer">
     </div>
     <div class="frontpage-arrowdown text-center">
-      <a href=""><i class="bx bxs-down-arrow"></i></a>
+      <a href="#"><i class="bx bxs-down-arrow"></i></a>
     </div>
     <!-- END FRONTPAGE -->
     <!-- START IMG INFO -->
     <div class="img-info text-center">
       <div class="img-self">
-        <img src="img/image3.png" alt="Yusuf Celik" title="Yusuf Celik">
+        <img class="w-100 h-auto" src="img/image3.png" alt="Yusuf Celik" title="Yusuf Celik">
       </div>
       <div class="img-name">
         <h2>
@@ -80,26 +80,27 @@
     <!-- END IMG INFO -->
     <!-- START ABOUT ME -->
     <div class="about-me">
-      <div class="about-me-title text-center">
+      <div class="about-me-title text-center" id="aboutme-title">
         <h2>
           About Me
         </h2>
       </div>
-      <div class="about-me-text mx-auto">
-        Mijn naam is Yusuf, ik ben 17 jaar en zit op het ROC Mondriaan in Tinwerf.
-        Ik doe de opleiding Software Developer en zit nu in mijn eerste jaar. Mijn
-        hobby’s zijn gamen, sporten en programmeren. Ik game al sinds jongs af aan
-        op de computer en heb ook geprobeerd om mijn eigen game te maken dat niet
-        zo goed ging omdat ik niks wist van programmeertalen. Dus ik wou een
-        opleiding kiezen waarbij ik achter een computer werk en koos uiteindelijk
-        voor software development en niet voor ITSD (IT Systems and Devices), omdat
-        ik liever achter de computer werk dan met computers. Ik vind websites maken
-        best leuk en weet nog niet precies of ik games wil maken of websites. Voor
-        nu weet ik HTML/CSS en zal het komende jaar ook werken aan Javascript en C#.
-      </div>
-      <br clear="left">
-      <div class="about-me-img">
-        <img src="#" alt="About me img">
+      <div class="about-me-content mx-auto d-lg-flex pt-5">
+        <div class="about-me-text mx-auto mx-sm-auto mx-md-auto me-lg-5">
+          Mijn naam is Yusuf, ik ben 17 jaar en zit op het ROC Mondriaan in Tinwerf.
+          Ik doe de opleiding Software Developer en zit nu in mijn eerste jaar. Mijn
+          hobby’s zijn gamen, sporten en programmeren. Ik game al sinds jongs af aan
+          op de computer en heb ook geprobeerd om mijn eigen game te maken dat niet
+          zo goed ging omdat ik niks wist van programmeertalen. Dus ik wou een
+          opleiding kiezen waarbij ik achter een computer werk en koos uiteindelijk
+          voor software development en niet voor ITSD (IT Systems and Devices), omdat
+          ik liever achter de computer werk dan met computers. Ik vind websites maken
+          best leuk en weet nog niet precies of ik games wil maken of websites. Voor
+          nu weet ik HTML/CSS en zal het komende jaar ook werken aan Javascript en C#.
+        </div>
+        <div class="about-me-img mx-auto pt-4 mx-xs-auto mx-sm-auto ms-lg-5 mx-md-auto p-lg-0">
+          <img class="w-100 h-auto text-center" src="img/image4.png" alt="About me img">
+        </div>
       </div>
     </div>
     <!-- END ABOUT ME -->

@@ -18,6 +18,7 @@ html, body {
 main {
     background-color: #141414;
     color: white;
+    padding: 15px;
 }
 
 /* ========== Navbar ========== */
@@ -40,18 +41,24 @@ nav .nav-link:hover, nav .navbar-brand:hover {
 }
 
 nav .darkmode button {
-    width: 30px;
-    height: 30px;
+    padding: 0;
+    width: 32px;
+    height: 32px;
     border: none;
     border-radius: 10%;
-    background-color: #FFC400;
-    transform: translateY(8px);
+    background-color: #ffd035;
+    transform: translateY(30%);
+}
+
+nav .darkmode i {
+    font-size: 20px;
+    margin: auto;
+    transform: translateY(1px);
 }
 
 .navbar-toggler {
     width: 40px;
     height: 40px;
-    color: white;
 }
 
 .navbar-toggler span i {
@@ -59,7 +66,7 @@ nav .darkmode button {
 }
 
 .navbar-toggler span {
-    color: black;
+    color: white;
 }
 /* ========== Content ========== */
 
@@ -76,7 +83,7 @@ nav .darkmode button {
 }
 
 .frontpage-arrowdown a i {
-    margin-top: 160px;
+    margin-top: 10px;
     color: white;
     -webkit-animation: scroll 3s ease;
     -moz-animation: scroll 3s ease;
@@ -105,6 +112,7 @@ nav .darkmode button {
 .img-self img {
     border: 2px solid white;
     border-radius: 50%;
+    max-width: 250px;
 }
 
 .img-name {
@@ -124,13 +132,24 @@ nav .darkmode button {
 }
 
 .about-me-text {
-    max-width: 521px;
+    max-width: 400px;
     min-width: auto;
 }
 
-.about-me-img
+.about-me-img {
+    max-width: 400px;
+    min-width: auto;
+}
 /* ========== Scrollbar ========== */
 
+element {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: none; 
+}
+
 ::-webkit-scrollbar {
-    width: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: none; 
 }
