@@ -18,7 +18,7 @@
 <body>
   <!-- START NAVBAR -->
   <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="nav navbar mx-auto text-center">
+    <div class="nav navbar mx-auto text-center blurrer">
       <div class="mx-auto">
         <a class="navbar-brand me-3" href="#">Yusuf Celik</a>
         <button class="navbar-toggler" style="border: 1px solid #a0a0a0;" type=" button" data-bs-toggle="collapse"
@@ -30,13 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#aboutme-title">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link" href="#experience-title">Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Projects</a>
@@ -56,8 +53,8 @@
   <!-- END NAVBAR -->
   <main>
     <!-- START FRONTPAGE -->
-    <div class="frontpage-image mx-auto px-1 text-center">
-      <img class="rounded img w-100 h-auto" id="btn1" src="img/image1.jpg" alt="image replacer">
+    <div class="frontpage-image mx-auto text-center">
+      <img class="rounded img w-100 h-auto" src="img/image1.jpg" alt="image replacer">
     </div>
     <div class="frontpage-arrowdown text-center">
       <a href="#"><i class="bx bxs-down-arrow"></i></a>
@@ -79,8 +76,8 @@
     </div>
     <!-- END IMG INFO -->
     <!-- START ABOUT ME -->
-    <div class="about-me">
-      <div class="about-me-title text-center" id="aboutme-title">
+    <div class="about-me" id="aboutme-title">
+      <div class="about-me-title text-center">
         <h2>
           About Me
         </h2>
@@ -104,6 +101,98 @@
       </div>
     </div>
     <!-- END ABOUT ME -->
+    <!-- START EXPERIENCE -->
+    <div class="experience">
+      <div class="experience-title text-center" id="experience-title">
+        <h2>
+          Experience
+        </h2>
+      </div>
+      <div class="experience-info mx-auto d-md-flex d-block p-md-4">
+        <div class="experience-tab w-100 ms-auto pt-3 pt-md-0 mb-auto btn-group-vertical">
+          <button>
+            <span>
+              2017-2018
+            </span>
+          </button>
+          <button>
+            <span>
+              2018-2021
+            </span>
+          </button>
+          <button>
+            <span>
+              2021-Present
+            </span>
+          </button>
+        </div>
+        <div class="experience-text me-auto p-2">
+          <div class="experience-tab-title text-center text-md-start">
+            <h3>
+              Maerlant Lyceum
+            </h3>
+          </div>
+          <div class="experience-tab-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et accusamus iure minus laborum
+              facilis earum facere molestiae veniam deserunt atque, inventore velit omnis. Ab facilis distinctio
+              obcaecati, labore enim, delectus quam tenetur dignissimos deserunt, accusamus fuga. Sequi, harum aut?
+            </p>
+          </div>
+          <div class="experience-tab-title visually-hidden">
+            <h3>
+              Sint-Maartenscollege Voorburg
+            </h3>
+          </div>
+          <div class="experience-tab-text visually-hidden">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et accusamus iure minus laborum
+              facilis earum facere molestiae veniam deserunt atque, inventore velit omnis. Ab facilis distinctio
+              obcaecati, labore enim, delectus quam tenetur dignissimos deserunt, accusamus fuga. Sequi, harum aut?
+            </p>
+          </div>
+          <div class="experience-tab-title visually-hidden">
+            <h3>
+              ROC Mondriaan
+            </h3>
+          </div>
+          <div class="experience-tab-text visually-hidden">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et accusamus iure minus laborum
+              facilis earum facere molestiae veniam deserunt atque, inventore velit omnis. Ab facilis distinctio
+              obcaecati, labore enim, delectus quam tenetur dignissimos deserunt, accusamus fuga. Sequi, harum aut?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="projects-title text-center">
+          <h2>
+            Projects
+          </h2>
+        </div>
+        <div class="project-images d-flex pt-4 px-0 my-0">
+          <ul class="d-flex pt-4 px-0 my-0 mx-auto">
+            <li>
+              <a href="#">
+                <img class="w-100 h-auto" src="img/image3.png" alt="Image Replacer">
+              </a>
+            </li>
+            <li class="mx-3">
+              <a href="#">
+                <img class="w-100 h-auto" src="img/image3.png" alt="Image Replacer">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="w-100 h-auto" src="img/image3.png" alt="Image Replacer">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END EXPERIENCE -->
   </main>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
