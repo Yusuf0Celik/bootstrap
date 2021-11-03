@@ -18,15 +18,15 @@ html, body {
 main {
     background-color: #141414;
     color: white;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    cursor: default;
+    user-select: none;
 }
 
 /* ========== Navbar ========== */
 
 nav {
-    background-color: #141414;
+    background-color: hsl(0, 0%, 8%, 90%);
+    user-select: none;
 }
 
 .navbar-brand {
@@ -65,6 +65,10 @@ nav .darkmode i {
 .navbar-toggler {
     width: 40px;
     height: 40px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 .navbar-toggler span i {
@@ -123,12 +127,14 @@ nav .darkmode i {
 
 .img-name {
     padding-top: 20px;
+    user-select: none;
 }
 
 .img-name-description {
     font-size: 12px;
     color: #707070;
     font-style: italic;
+    user-select: none;
 }
 
 /* ========== About Me ========== */
@@ -137,9 +143,15 @@ nav .darkmode i {
     padding-top: 80px;
 }
 
+.about-me-title {
+    user-select: none;
+}
+
 .about-me-text {
     max-width: 400px;
     min-width: auto;
+    cursor: text;
+    user-select: none;
 }
 
 .about-me-img {
@@ -149,8 +161,11 @@ nav .darkmode i {
 
 /* ========== Experience ========== */
 
-.experience-title {
+.experience {
     padding-top: 50px;
+}
+
+.experience-title {
     cursor: text;
     user-select: none;
 }
@@ -165,16 +180,23 @@ nav .darkmode i {
     height: 50px;
     border: 1px solid #00ffff;
     background-color: #707070;
-}
-
-.experience-tab button:hover {
-    background-color: #747474;
-} 
-
-.experience-tab span {
     color: #00ffff;
     font-size: 20px;
     font-weight: 500;
+}
+
+.experience-tab button:hover {
+    background-color: #00ffff;
+    color: white;
+}
+
+.experience-tab button:focus{
+    background-color: #00ffff;
+    color: white;
+}
+
+.experience button:active { 
+    background-color: #00e2e2;
 }
 
 .experience-tab-text {
@@ -195,6 +217,10 @@ nav .darkmode i {
 }
 
 /* ========== Projects ========== */
+
+.projects {
+    top: -100px;
+}
 
 .projects-title {
     padding-top: 50px;
@@ -220,17 +246,18 @@ nav .darkmode i {
     user-select: none;
 }
 
-.contact-background-img {
-    background-color: white;
-    background-image: url(/img/worldmap.jpg);
-    max-width: 1873px;
+.contact-form {
+    background-image: url(/img/worldmap2.jpg);
+    background-size: cover;
+    background-position: center center;
+    max-width: auto;
 }
 
 form {
     max-width: 700px;
     width: auto;
-    height: 500px;
-    background-color: #0f0f0f;
+    height: auto;
+    background-color: transparent;
 }
 
 .form-group {
@@ -246,7 +273,7 @@ form {
     background-color: #141414;
     color: white;
     border: none;
-    border-bottom: 1px solid #00ffff;
+    border-bottom: 1px solid #141414;
     font-weight: 500;
     padding: 5px;
 }
@@ -259,7 +286,7 @@ form {
     background-color: #141414;
     color: white;
     border: none;
-    border-bottom: 1px solid #00ffff;
+    border-bottom: 1px solid #141414;
     font-weight: 500;
     padding: 5px;
 }
@@ -272,13 +299,25 @@ form {
     background-color: #141414;
     color: white;
     border: none;
-    border-bottom: 1px solid #00ffff;
+    border-bottom: 1px solid #141414;
     font-weight: 500;
     padding: 5px;
 }
 
 input:focus {
     outline: none;
+}
+
+.form-group input:focus {
+    border-bottom: 1px solid #00ffff;
+}
+
+.form-group-email input:focus {
+    border-bottom: 1px solid #00ffff;
+}
+
+.form-group-subject input:focus {
+    border-bottom: 1px solid #00ffff;
 }
 
 input::placeholder {
@@ -289,13 +328,14 @@ textarea {
     background-color: #141414;
     color: white;
     border: none;
-    border-bottom: 1px solid #00ffff;
+    border-bottom: 1px solid #141414;
     font-weight: 500;
     padding: 5px;
 }
 
 textarea:focus {
     outline: none;
+    border-bottom: 1px solid #00ffff;
 }
 
 textarea::placeholder {
@@ -307,6 +347,8 @@ textarea::placeholder {
 footer {
     background-color: #050505;
     color: white;
+    cursor: text;
+    user-select: none;
 }
 
 footer h3 {

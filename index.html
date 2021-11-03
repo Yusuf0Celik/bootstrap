@@ -53,15 +53,17 @@
   <!-- END NAVBAR -->
   <main>
     <!-- START FRONTPAGE -->
-    <div class="frontpage-image mx-auto text-center">
-      <img class="rounded img w-100 h-auto" src="img/image1.jpg" alt="image replacer">
-    </div>
-    <div class="frontpage-arrowdown text-center">
-      <a href="#"><i class="bx bxs-down-arrow"></i></a>
+    <div class="frontpage px-2">
+      <div class="frontpage-image mx-auto text-center">
+        <img class="rounded img w-100 h-auto" src="img/image1.jpg" alt="image replacer">
+      </div>
+      <div class="frontpage-arrowdown text-center">
+        <a href="#"><i class="bx bxs-down-arrow"></i></a>
+      </div>
     </div>
     <!-- END FRONTPAGE -->
     <!-- START IMG INFO -->
-    <div class="img-info text-center">
+    <div class="img-info text-center px-2">
       <div class="img-self">
         <img class="w-100 h-auto" src="img/image3.png" alt="Yusuf Celik" title="Yusuf Celik">
       </div>
@@ -76,13 +78,13 @@
     </div>
     <!-- END IMG INFO -->
     <!-- START ABOUT ME -->
-    <div class="about-me" id="aboutme-title">
+    <div class="about-me px-2" id="aboutme-title">
       <div class="about-me-title text-center">
         <h2>
           About Me
         </h2>
       </div>
-      <div class="about-me-content mx-auto d-lg-flex pt-5">
+      <div class="about-me-content d-lg-flex pt-5">
         <div class="about-me-text mx-auto mx-sm-auto mx-md-auto me-lg-5">
           Mijn naam is Yusuf, ik ben 17 jaar en zit op het ROC Mondriaan in Tinwerf.
           Ik doe de opleiding Software Developer en zit nu in mijn eerste jaar. Mijn
@@ -95,39 +97,33 @@
           best leuk en weet nog niet precies of ik games wil maken of websites. Voor
           nu weet ik HTML/CSS en zal het komende jaar ook werken aan Javascript en C#.
         </div>
-        <div class="about-me-img mx-auto pt-4 mx-xs-auto mx-sm-auto ms-lg-5 mx-md-auto p-lg-0">
+        <div class="about-me-img pt-4 mx-auto mx-sm-auto ms-lg-5 mx-md-auto p-lg-0">
           <img class="w-100 h-auto text-center" src="img/image4.png" alt="About me img">
         </div>
       </div>
     </div>
     <!-- END ABOUT ME -->
     <!-- START EXPERIENCE -->
-    <div class="experience" id="experience-title">
+    <div class="experience px-2" id="experience-title">
       <div class="experience-title text-center">
         <h2>
           Experience
         </h2>
       </div>
-      <div class="experience-info mx-auto d-md-flex d-block p-md-4">
+      <div class="experience-info mx-auto text-center d-md-flex d-block pt-md-4">
         <div class="experience-tab w-100 ms-auto pt-3 pt-md-0 mb-auto btn-group-vertical">
           <button>
-            <span>
-              2017-2018
-            </span>
+            2017-2018
           </button>
           <button>
-            <span>
-              2018-2021
-            </span>
+            2018-2021
           </button>
           <button>
-            <span>
-              2021-Present
-            </span>
+            2021-Present
           </button>
         </div>
-        <div class="experience-text me-auto p-2">
-          <div class="experience-tab-title text-center text-md-start">
+        <div class="experience-text mx-md-0 mx-auto me-md-auto p-2">
+          <div class="experience-tab-title text-center">
             <h3 class="experience-tab-title">
               Maerlant Lyceum
             </h3>
@@ -165,70 +161,68 @@
           </div>
         </div>
       </div>
-      <!-- END EXPERIENCE -->
-      <!-- START PROJECTS -->
-      <div class="projects">
-        <div class="projects-title text-center" id="projects">
-          <h2>
-            Projects
-          </h2>
-        </div>
-        <div class="project-images d-flex pt-4 px-0 my-0">
-          <ul class="d-flex pt-4 px-0 my-0 mx-auto">
-            <li>
-              <a href="#">
-                <img class="w-100 h-auto" src="img/image3.png" alt="Image Replacer">
-              </a>
-            </li>
-            <li class="mx-3">
-              <a href="#">
-                <img class="w-100 h-auto" src="img/image3.png" alt="Image Replacer">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img class="w-100 h-auto" src="img/image3.png" alt="Image Replacer">
-              </a>
-            </li>
-          </ul>
-        </div>
+    </div>
+    <!-- END EXPERIENCE -->
+    <!-- START PROJECTS -->
+    <div class="projects px-2" id="projects">
+      <div class="projects-title text-center">
+        <h2>
+          Projects
+        </h2>
       </div>
-      <!-- END PROJECTS -->
-      <!-- START CONTACT -->
-      <div class="contact">
-        <div class="contact-title text-center pt" id="contact">
-          <h2>
-            Contact
-          </h2>
-        </div>
-        <div class="contact-form py-5">
-          <form class="mx-auto text-center py-2" action="">
-            <div class="form-group fg-flname p-1">
-              <label for="fname">
-                <input type="text" placeholder="First Name">
-              </label>
-              <label for="lname">
-                <input type="text" placeholder="Last Name">
-              </label>
-            </div>
-            <div class="form-group-email p-1">
-              <label for="email">
-                <input type="text" placeholder="Email">
-              </label>
-            </div>
-            <div class="form-group-subject p-1">
-              <label for="subject">
-                <input type="text" placeholder="Subject">
-              </label>
-            </div>
-            <div class="form-group-message p-1">
-              <label for="message"></label>
-              <textarea name="message" id="messageBox" cols="66" rows="10" placeholder="Message"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="contact-background-img w-auto h-50">
-        </div>
+      <div class="project-images d-flex pt-4 px-0 my-0">
+        <ul class="d-block d-md-flex pt-4 px-0 my-0 mx-auto">
+          <li class="px-md-2">
+            <a href="#">
+              <img class="w-100 h-auto" src="img/image3.png" alt="Image Replacer">
+            </a>
+          </li>
+          <li class="mx-auto py-md-0 py-sm-1">
+            <a href="#">
+              <img class="w-100 h-auto" src="img/image3.png" alt="Image Replacer">
+            </a>
+          </li>
+          <li class="px-md-2">
+            <a href="#">
+              <img class="w-100 h-auto" src="img/image3.png" alt="Image Replacer">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- END PROJECTS -->
+    <!-- START CONTACT -->
+    <div class="contact">
+      <div class="contact-title text-center pt" id="contact">
+        <h2>
+          Contact
+        </h2>
+      </div>
+      <div class="contact-form py-5">
+        <form class="mx-auto text-center py-2" action="">
+          <div class="form-group fg-flname p-1">
+            <label for="fname">
+              <input type="text" placeholder="First Name">
+            </label>
+            <label for="lname">
+              <input type="text" placeholder="Last Name">
+            </label>
+          </div>
+          <div class="form-group-email p-1">
+            <label for="email">
+              <input type="text" placeholder="Email">
+            </label>
+          </div>
+          <div class="form-group-subject p-1">
+            <label for="subject">
+              <input type="text" placeholder="Subject">
+            </label>
+          </div>
+          <div class="form-group-message p-1">
+            <label for="message"></label>
+            <textarea name="message" id="messageBox" cols="65" rows="10" placeholder="Message"></textarea>
+          </div>
+        </form>
       </div>
       <!-- END PROJECTS -->
     </div>
@@ -241,15 +235,21 @@
       </h3>
     </div>
     <ul class="social-media-icons d-flex pt-3">
-      <a class="ms-auto" href="https://twitter.com/TheAeXer">
-        <li><i class="bx bxl-twitter"></i></li>
-      </a>
-      <a class="px-3" href="">
-        <li><i class="bx bxl-linkedin"></i></li>
-      </a>
-      <a class="me-auto" href="https://www.facebook.com/aexer.aexer.9">
-        <li><i class="bx bxl-facebook"></i></li>
-      </a>
+      <li class="ms-auto">
+        <a href="https://twitter.com/TheAeXer" target="_blank">
+          <i class="bx bxl-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="px-3" href="https://www.linkedin.com/in/yusuf-c-658037221/" target="_blank">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </li>
+      <li class="me-auto">
+        <a href="https://www.facebook.com/aexer.aexer.9" target="_blank">
+          <i class="bx bxl-facebook"></i>
+        </a>
+      </li>
     </ul>
     <h3>
       Email
