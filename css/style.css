@@ -179,10 +179,19 @@ nav .darkmode i {
     width: 300px;
     height: 50px;
     border: 1px solid #00ffff;
-    background-color: #707070;
+    background-color: #0e0e0e;
     color: #00ffff;
     font-size: 20px;
     font-weight: 500;
+}
+
+.experience h3 {
+    font-size: 21px;
+}
+
+.experience p {
+    font-size: 16px;
+    color: white;
 }
 
 .experience-tab button:hover {
@@ -212,8 +221,9 @@ nav .darkmode i {
 .experience-text {
     max-width: 300px;
     min-width: auto;
+    height: 265px;
     border: 1px solid #00ffff;
-    background-color: #707070;
+    background-color: #141414;
 }
 
 /* ========== Projects ========== */
@@ -345,7 +355,7 @@ textarea::placeholder {
 /* ========== Footer ========== */
 
 footer {
-    background-color: #050505;
+    background-color: black;
     color: white;
     cursor: text;
     user-select: none;
