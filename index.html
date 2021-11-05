@@ -59,12 +59,12 @@
         <img class="rounded img w-100 h-auto" src="img/image1.jpg" alt="image replacer">
       </div>
       <div class="frontpage-arrowdown text-center">
-        <a href="#"><i class="bx bxs-down-arrow"></i></a>
+        <a href="#imgInfo"><i class="bx bxs-down-arrow"></i></a>
       </div>
     </div>
     <!-- END FRONTPAGE -->
     <!-- START IMG INFO -->
-    <div class="img-info text-center px-2">
+    <div class="img-info text-center px-2" id="imgInfo">
       <div class="img-self">
         <img class="w-100 h-auto" src="img/image3.png" alt="Yusuf Celik" title="Yusuf Celik">
       </div>
@@ -144,7 +144,7 @@
           Projects
         </h2>
       </div>
-      <div class="project-images d-flex pt-4 px-0 my-0">
+      <div class="project-images d-flex py-4 px-0 my-0">
         <ul class="d-block d-md-flex pt-4 px-0 my-0 mx-auto">
           <li class="px-md-2">
             <a href="#">
@@ -166,40 +166,44 @@
     </div>
     <!-- END PROJECTS -->
     <!-- START CONTACT -->
-    <div class="contact">
-      <div class="contact-title text-center pt" id="contact">
+    <div class="contact pb-4">
+      <div class="contact-title text-center" id="contact">
         <h2>
-          Contact
+          <b>Contact</b>
         </h2>
       </div>
-      <div class="contact-form py-5">
-        <form class="mx-auto text-center py-2" action="">
-          <div class="form-group fg-flname p-1">
-            <label for="fname">
-              <input type="text" placeholder="First Name">
-            </label>
-            <label for="lname">
-              <input type="text" placeholder="Last Name">
-            </label>
-          </div>
-          <div class="form-group-email p-1">
-            <label for="email">
-              <input type="text" placeholder="Email">
-            </label>
-          </div>
-          <div class="form-group-subject p-1">
-            <label for="subject">
-              <input type="text" placeholder="Subject">
-            </label>
-          </div>
-          <div class="form-group-message p-1">
-            <label for="message"></label>
-            <textarea name="message" id="messageBox" cols="65" rows="10" placeholder="Message"></textarea>
-          </div>
+      <div class="form-body">
+        <div class="form-display d-block">
+          <form class="fcf-form-class" id="fcf-form-id" action="https://formsubmit.co/yc5693410@gmail.com"
+            method="post">
+            <div class="form-input-group mx-auto">
+              <div class="form-input-div w-100">
+                <input class="form-input w-100" type="text" id="Name" name="Name" required placeholder="Full Name">
+              </div>
+            </div>
+            <div class="form-input-group mx-auto">
+              <div class="form-input-div w-100">
+                <input class="form-input w-100" type="email" id="Email" name="Email" required placeholder="Email">
+              </div>
+            </div>
+            <div class="form-input-group mx-auto">
+              <div class="form-input-div w-100">
+                <textarea class="form-input w-100" id="Message" name="Message" rows="6" maxlength="3000" required
+                  placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="form-input-group w-100 mx-auto">
+              <button class="form-button fcf-btn-lg fcf-btn-block w-100" type="submit" id="fcf-button"
+                formtarget="_blank">
+                Send Message
+              </button>
+            </div>
+        </div>
         </form>
       </div>
-      <!-- END PROJECTS -->
     </div>
+    </div>
+    <!-- END CONTACT -->
   </main>
   <!-- START FOOTER -->
   <footer class="text-center">
