@@ -192,6 +192,10 @@ nav .darkmode i {
     color: white;
 }
 
+.experience-tab button {
+    border-radius: 0;
+}
+
 .experience-tab button:hover {
     background-color: #00ffff;
     color: white;
@@ -221,7 +225,7 @@ nav .darkmode i {
     min-width: auto;
     height: 265px;
     border: 1px solid #00ffff;
-    background-color: #141414;
+    background-color: transparent;
 }
 
 /* ========== Projects ========== */
