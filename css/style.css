@@ -22,6 +22,31 @@ main {
     user-select: none;
 }
 
+/* ========== Dark Mode ========== */
+
+.light-mode-active-contact-text {
+    color: #ffffff!important;
+}
+
+.light-mode-active {
+    background-color: #ffffff!important;
+    color: black;
+}
+
+.light-mode-active-footer {
+    background-color: #5e5e5e!important;
+}
+
+
+.light-mode-active-text {
+    color: #000000!important;
+}
+
+.light-mode-active-border {
+    border-color: black!important;
+}
+
+
 /* ========== Navbar ========== */
 
 nav {
@@ -52,7 +77,7 @@ nav .darkmode button {
     height: 32px;
     border: none;
     border-radius: 10%;
-    background-color: #ffd035;
+    background-color: #ffd756;
     transform: translateY(30%);
 }
 
@@ -78,7 +103,7 @@ nav .darkmode i {
 .navbar-toggler span {
     color: white;
 }
-/* ========== Content ========== */
+/* ========== Frontpage ========== */
 
 .frontpage-image {
     padding-top: 100px;
@@ -86,19 +111,14 @@ nav .darkmode i {
     background-color: #141414;
 }
 
-/* ========== Frontpage Arrow ========== */
-
 .frontpage-arrowdown {
     font-size: 35px;
 }
 
 .frontpage-arrowdown a i {
-    margin-top: 10px;
+    padding-top: 10px;
     color: white;
-    -webkit-animation: scroll 3s ease;
-    -moz-animation: scroll 3s ease;
-    -o-animation: scroll 3s ease infinite;
-    animation: scroll 3s ease infinite;
+    animation: scroll 3s ease-in-out infinite;
 }
 
 @keyframes scroll {
@@ -173,18 +193,19 @@ nav .darkmode i {
     color: #2bffff;
 }
 
+.experience h3 {
+    font-size: 21px;
+}
+
 .experience-tab button {
     width: 300px;
     height: 50px;
     border: 1px solid #00ffff;
-    background-color: #0e0e0e;
+    border-right: none;
+    background-color: transparent;
     color: #00ffff;
     font-size: 20px;
     font-weight: 500;
-}
-
-.experience h3 {
-    font-size: 21px;
 }
 
 .experience p {

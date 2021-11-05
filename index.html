@@ -43,7 +43,7 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <div class="darkmode">
-            <button>
+            <button id="theme-toggle">
               <i class="darkmode-icon bx bx-sun m-auto"></i>
             </button>
           </div>
@@ -52,7 +52,7 @@
     </div>
   </nav>
   <!-- END NAVBAR -->
-  <main>
+  <main class="themain">
     <!-- START FRONTPAGE -->
     <div class="frontpage px-2">
       <div class="frontpage-image mx-auto text-center">
@@ -66,7 +66,7 @@
     <!-- START IMG INFO -->
     <div class="img-info text-center px-2" id="imgInfo">
       <div class="img-self">
-        <img class="w-100 h-auto" src="img/image3.png" alt="Yusuf Celik" title="Yusuf Celik">
+        <img class="img-self-self w-100 h-auto" src="img/image3.png" alt="Yusuf Celik" title="Yusuf Celik">
       </div>
       <div class="img-name">
         <h2>
@@ -113,7 +113,7 @@
       </div>
       <div class="experience-info mx-auto text-center d-md-flex d-block pt-md-4">
         <div class="experience-tab w-100 ms-auto pt-3 pt-md-0 mb-auto btn-group-vertical">
-          <button class="button-info btn active">
+          <button class="button-info">
             2017-2018
           </button>
           <button class="button-hobby">
@@ -168,7 +168,7 @@
     <!-- START CONTACT -->
     <div class="contact pb-4">
       <div class="contact-title text-center" id="contact">
-        <h2>
+        <h2 class="contact-title-title">
           <b>Contact</b>
         </h2>
       </div>
@@ -206,7 +206,7 @@
     <!-- END CONTACT -->
   </main>
   <!-- START FOOTER -->
-  <footer class="text-center">
+  <footer class="thefooter text-center">
     <div class="social-media-title pt-4">
       <h3>
         Social Media
@@ -243,7 +243,7 @@
     </p>
   </footer>
   <!-- START JAVASCRIPT LINK -->
-  <script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
   <!-- END JAVASCRIPT LINK -->
   <!-- START JAVASCRIPT BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -253,6 +253,7 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
   <!-- END JAVASCRIPT BOOTSTRAP -->
+  <?php include('getip.php') ?>
 </body>
 
 </html>
