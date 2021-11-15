@@ -1,6 +1,18 @@
 // DARK MODE
 
 
+// TRANSITION
+
+window.onload = () => {
+  const transition_el = document.querySelector('.transition');
+
+  setTimeout(() => {
+    transition_el.classList.remove('is-active');
+  }, 1500);
+}
+
+console.log("Animation Loaded in")
+
 // COPY PASTE EMAIL
 const button = document.querySelector(".copytoClipboard");
 if (button) {
