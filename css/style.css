@@ -19,7 +19,6 @@ html, body {
 main {
     background-color: #141414;
     color: white;
-    user-select: none;
 }
 
 /* ========== Dark Mode ========== */
@@ -147,7 +146,6 @@ nav .darkmode i {
 
 .img-name {
     padding-top: 20px;
-    user-select: none;
 }
 
 .img-name-description {
@@ -163,29 +161,38 @@ nav .darkmode i {
     padding-top: 80px;
 }
 
-.about-me-title {
-    user-select: none;
-}
-
 .about-me-text {
     max-width: 400px;
     min-width: auto;
-    user-select: none;
 }
 
 .about-me-img {
     max-width: 400px;
     min-width: auto;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+.about-me-img img {
+    transform: translate(-100px);
+    width: 770px;
+    height: 425px;
+}
+
+.text-links {
+    text-decoration: none;
+    color: #00EBB7;
+}
+
+.text-links:hover {
+    color: #00EBB7;
+    opacity: .7;
 }
 
 /* ========== Experience ========== */
 
 .experience {
     padding-top: 50px;
-}
-
-.experience-title {
-    user-select: none;
 }
 
 .experience-tab-title {
@@ -215,6 +222,7 @@ nav .darkmode i {
 
 .experience-tab button {
     border-radius: 0;
+    transition: 0.3s;
 }
 
 .experience-tab button:hover {
@@ -257,7 +265,6 @@ nav .darkmode i {
 
 .projects-title {
     padding-top: 50px;
-    user-select: none;
 }
 
 .projects ul {
@@ -280,7 +287,6 @@ nav .darkmode i {
 
 .contact-title {
     padding-top: 50px;
-    user-select: none;
 }
 
 .form-body {
@@ -388,7 +394,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 footer {
     background-color: black;
     color: white;
-    user-select: none;
 }
 
 footer h3 {
@@ -425,14 +430,6 @@ footer p {
 
 /* ========== Scrollbar ========== */
 
-element {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow: none; 
-}
-
 ::-webkit-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow: none; 
+    display: none;
 }
