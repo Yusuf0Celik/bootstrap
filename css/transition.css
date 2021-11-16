@@ -64,3 +64,19 @@ nav {
     opacity: 1;
   }
 }
+
+html, body {
+  animation: noscroll 1.5s linear forwards;
+}
+
+@keyframes noscroll {
+  0% {
+    overflow: hidden;
+  }
+  99.9% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
+}
