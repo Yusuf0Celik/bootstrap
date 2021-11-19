@@ -1,11 +1,3 @@
-/* Colors 
-#141414 BLACK
-#00FFFF BLUE
-#FFC400 YELLOW
-#9A00FF PURPLE
-#707070 GREY
-*/
-
 html, body {
     margin: 0;
     padding: 0;
@@ -23,34 +15,15 @@ main {
 
 /* ========== Dark Mode ========== */
 
-.light-mode-active-contact-text {
-    color: #ffffff!important;
-}
 
-.light-mode-active {
-    background-color: #ffffff!important;
-    color: black;
-}
-
-.light-mode-active-footer {
-    background-color: #5e5e5e!important;
-}
-
-
-.light-mode-active-text {
-    color: #000000!important;
-}
-
-.light-mode-active-border {
-    border-color: black!important;
-}
 
 
 /* ========== Navbar ========== */
 
 nav {
     padding-top: 81px;
-    background-color: hsl(0, 0%, 8%, 90%);
+    background-color: hsl(0, 0, 0 / 0%);
+    backdrop-filter: blur(1rem);
     user-select: none;
 }
 
