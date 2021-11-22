@@ -5,7 +5,7 @@
 #9A00FF PURPLE
 #707070 GREY
 */
-/*
+
 .transition-1 {
   position: fixed;
   top: 0;
@@ -79,4 +79,4 @@ html, body {
   100% {
     overflow: auto;
   }
-} */
+}

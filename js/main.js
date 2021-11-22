@@ -13,6 +13,24 @@ window.onload = () => {
 
 console.log("Animation Loaded in")
 
+// CURSOR TRAIL
+
+$(document).ready(function() {
+  const $grid = $('.grid')
+  const $gridItem = $('.grid__item')
+  const gridItemHeight = $gridItem.height()
+  const gridItemWidth = $gridItem.width()
+  
+  const horzCount = Math.floor($grid.width() / gridItemWidth)
+  const vertCount = Math.floor($grid.height() / gridItemHeight)
+  
+  const totalGridItems = horzCount * vertCount
+  for (const i = 0; i < totalGridItems; i++) {
+    const $gridItemClone = $gridItem.clone();
+    $grid.append($gridItemClone);
+  }
+})
+
 // COPY PASTE EMAIL
 const button = document.querySelector(".copytoClipboard");
 if (button) {

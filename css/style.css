@@ -1,3 +1,9 @@
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-up(xxl) { ... }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -78,10 +84,31 @@ nav .darkmode i {
 }
 /* ========== Frontpage ========== */
 
-.frontpage-image {
+@media (max-width: 576px) {
+    .frontpage h1 {
+        font-size: 4.5rem;
+    }
+}
+
+.frontpage-text {
     padding-top: 100px;
-    max-width: 1000px;
-    background-color: #141414;
+    font-weight: 700;
+}
+
+.letter-hover {
+    height: auto;
+    font-size: 6.5rem;
+    cursor: default;
+    text-shadow: 5px 5px 5px black;
+    transition: 400ms ease-in-out;
+}
+
+.letter-hover:hover {
+    color: #00ffff;
+}
+
+.frontpage-make {
+    margin: -40px 0;
 }
 
 .frontpage-arrowdown {
@@ -116,7 +143,7 @@ nav .darkmode i {
     border: 2px solid white;
     border-radius: 50%;
     max-width: 250px;
-    
+    box-shadow: 5px 5px 5px black;
 }
 
 .img-name {
