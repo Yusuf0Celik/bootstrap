@@ -1,3 +1,7 @@
+:focus {
+    outline: none;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -12,11 +16,6 @@ main {
     background-color: #141414;
     color: white;
 }
-
-/* ========== Dark Mode ========== */
-
-
-
 
 /* ========== Navbar ========== */
 
@@ -38,9 +37,13 @@ nav {
 
 nav .navbar-brand, nav .nav-link {
     color: white;
+    transition: 200ms ease-in;
 }
 
-nav .nav-link:hover, nav .navbar-brand:hover {
+nav .nav-link:hover, 
+nav .navbar-brand:hover,
+nav .nav-link:focus,
+nav .navbar-brand:focus {
     color: #00ffff;
 }
 
@@ -107,6 +110,15 @@ nav .darkmode i {
 
 .frontpage-arrowdown {
     font-size: 35px;
+}
+
+.frontpage-arrowdown i:hover {
+    color: #00ffff;
+    transition: 300ms ease-in;
+}
+
+.frontpage-arrowdown:focus {
+    outline: 1px solid white;
 }
 
 .frontpage-arrowdown a i {
@@ -182,7 +194,8 @@ nav .darkmode i {
     color: #00EBB7;
 }
 
-.text-links:hover {
+.text-links:hover,
+.text-links:focus {
     color: #00EBB7;
     opacity: .7;
 }
@@ -274,6 +287,10 @@ nav .darkmode i {
     border: 3px solid white;
 }
 
+.projects li:focus {
+    outline: auto;
+}
+
 /* ========== Contact ========== */
 
 .contact {
@@ -334,7 +351,8 @@ nav .darkmode i {
     }
 }
 
-select.form-input[size], select.form-input[multiple] {
+select.form-input[size],
+select.form-input[multiple] {
     height: auto;
 }
 
@@ -362,7 +380,8 @@ textarea.form-input {
     text-decoration: none;
 }
 
-.form-button:focus, .form-button.focus {
+.form-button:focus,
+.form-button.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem #007bff40;
 }
@@ -377,11 +396,13 @@ textarea.form-input {
     box-shadow: 0 0 0 0.1rem #45ffffa4;
 }
 
-.fcf-btn-block+.fcf-btn-block {
+.fcf-btn-block + .fcf-btn-block {
     margin-top: 0.5rem;
 }
 
-input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+input[type="submit"].fcf-btn-block,
+input[type="reset"].fcf-btn-block,
+input[type="button"].fcf-btn-block {
     width: 100%;
 }
 
@@ -398,15 +419,18 @@ footer h3 {
     margin: 0;
 }
 
-footer button i, footer a {
+footer button i,
+footer a {
     color: white;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
     color: #00ffff;
 }
 
-footer button i:hover {
+footer button i:hover,
+footer button i:focus {
     color: #00ffff;
 }
 
