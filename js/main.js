@@ -17,7 +17,7 @@ console.log("Animation Loaded in")
 const button = document.querySelector(".copytoClipboard");
 if (button) {
   button.addEventListener("click", function () {
-    const mail = "yc5693410@gmail.com";
+    const mail = "ycelik5693410@gmail.com";
     navigator.clipboard.writeText(mail);
   })
 }
