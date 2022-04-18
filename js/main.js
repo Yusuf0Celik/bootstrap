@@ -14,7 +14,7 @@ window.onload = () => {
 console.log("Animation Loaded in")
 
 // COPY PASTE EMAIL
-const button = document.querySelector(".copytoClipboard");
+const button = document.querySelector(".copy-to-clipboard");
 if (button) {
   button.addEventListener("click", function () {
     const mail = "ycelik5693410@gmail.com";
